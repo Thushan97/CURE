@@ -1,5 +1,5 @@
 import codecs
-from gpt_fconv_dataset import GPTFConvDataset
+from .gpt_fconv_dataset import GPTFConvDataset
 
 
 class GPTFConvDataLoader():
