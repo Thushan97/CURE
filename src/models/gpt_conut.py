@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from .conv_tbc import ConvTBC
+from src.models.conv_tbc import ConvTBC
 
 
 class GPTCoNuTModel(nn.Module):
