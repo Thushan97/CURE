@@ -1,6 +1,6 @@
 import torch.nn as nn
 
-from .gpt_conut import GPTFConvEncoder, GPTFConvDecoder
+from src.models.gpt_conut import GPTFConvEncoder, GPTFConvDecoder
 
 
 class GPTFConvModel(nn.Module):
