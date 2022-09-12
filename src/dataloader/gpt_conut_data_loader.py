@@ -1,5 +1,5 @@
 import codecs
-from gpt_conut_dataset import GPTCoNuTDataset
+from .gpt_conut_dataset import GPTCoNuTDataset
 
 
 class GPTCoNuTDataLoader():
