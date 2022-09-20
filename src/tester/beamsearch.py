@@ -220,11 +220,11 @@ class GPTFConvModelCuda(nn.Module):
 
 
 class BeamSearch():
-    def __init__(self, model, dictionary, beam_size=10):
+    def __init__(self, model, m_type, dictionary, beam_size=10):
         self.dictionary = dictionary
-        if isinstance(model, GPTCoNuTModel):
+        if m_type == "conut":
             self.model = GPTCoNuTModelCuda(model, beam_size)
-        elif isinstance(model, GPTFConvModel):
+        elif m_type == "fconv":
             self.model = GPTFConvModelCuda(model, beam_size)
         self.beam_size = beam_size
         self.max_step = 128
